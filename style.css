@@ -383,6 +383,37 @@ section .title::after{
     content: "Health is wealth";
      
 }
+
+.teams .survey-button{
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+  }
+  
+  .teams .survey-button:hover {
+    letter-spacing: 3px;
+    background-color: crimson;
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(185, 93, 93) 0px 7px 29px 0px;
+  }
+  
+  .teams .survey-button:active {
+    letter-spacing: 3px;
+    background-color:  rgb(215, 144, 144) 0px 7px 29px 0px;
+    color: hsl(0, 0%, 100%);
+    box-shadow:  rgb(221, 128, 128) 0px 7px 29px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+  }
+  
+  
 .teams .carousel .card{
     background: #222;
     border-radius: 6px;
