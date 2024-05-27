@@ -304,7 +304,15 @@ section .title::after{
 }
 
 /* skills section styling */
-
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.image{
+    width: 28rem;
+    height: 20rem;
+}
 .skills .title::after{
     content: "";
 }
@@ -318,6 +326,7 @@ section .title::after{
 }
 .skills .skills-content .left p{
     text-align: justify;
+    margin-right: 5rem;
 }
 .skills .skills-content .left a{
     display: inline-block;
