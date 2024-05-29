@@ -82,7 +82,7 @@ section .title::after{
     position: fixed;
     width: 100%;
     z-index: 999;
-    padding: 30px 0;
+    padding: 30px;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
@@ -561,7 +561,41 @@ footer span a:hover{
     text-decoration: underline;
 }
 
-button{
+.appointment{
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-left: 40px;
+}
+
+.appointment{
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: crimson;
+    box-shadow: rgb(188, 99, 117);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+.appointment:hover {
+    letter-spacing: 3px;
+    box-shadow: rgb(188, 99, 117);
+}
+
+.appointment:active {
+    letter-spacing: 3px;
+    background-color: crim;
+    color: hsl(0, 0%, 100%);
+    box-shadow:rgb(188, 99, 117);
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+.survey{
     margin: 50px;
     background-color: crimson;
     color: white;
@@ -577,12 +611,12 @@ button{
     transition: all 0.5s ease;
 }
 
-button:hover {
+.survey:hover {
     letter-spacing: 3px;
     box-shadow: rgb(188, 99, 117);
 }
 
-button:active {
+.survey:active {
     letter-spacing: 3px;
     background-color: crim;
     color: hsl(0, 0%, 100%);
