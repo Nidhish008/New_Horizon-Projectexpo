@@ -52,7 +52,7 @@ section .title{
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 60px;
+    margin-bottom: 25px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -561,6 +561,35 @@ footer span a:hover{
     text-decoration: underline;
 }
 
+button{
+    margin: 50px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: crimson;
+    box-shadow: rgb(188, 99, 117);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all 0.5s ease;
+}
+
+button:hover {
+    letter-spacing: 3px;
+    box-shadow: rgb(188, 99, 117);
+}
+
+button:active {
+    letter-spacing: 3px;
+    background-color: crim;
+    color: hsl(0, 0%, 100%);
+    box-shadow:rgb(188, 99, 117);
+    transform: translateY(10px);
+    transition: 100ms;
+}
 
 /* responsive media query start */
 @media (max-width: 1104px) {

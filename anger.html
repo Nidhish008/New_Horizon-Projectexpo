@@ -1,22 +1,237 @@
 <html>
-    <body style=background:black;>
-       <p style="color:black;text-align:center;"> 
-        <h1 style="color:white;background:crimson";>Clinical Anger Scale</h1>
-      <div style="color:white;"> The group of items below inquire about the types of feelings you have. Each of the 21 groups of items has four options.
-       The Clinical Anger Scale (CAS) is used by healthcare professionals to estimate the degree of Clinical Anger (Chronic and pervasive anger). Clinical anger differs from the common emotion in terms of the distress caused to the individual and the time period for which the person has experienced the emotion.
-       <br>
-       Instructions<br>
-       The group of items below inquire about the types of feelings you have. Each of the 21 groups of items has four options.
-       For example,<br>
-       A. I feel fine.<br>
-       B. I don't feel all that well.<br>
-       C. I feel somewhat miserable.<br>
-       D. I feel completely miserable.
-    </div>
-    </p>
-<div style = "color:white">
-    
-    <a href="https://forms.gle/7CsxNYwNkqHJcMgE9" style="color:crimson">Click me for the  Quiz For better understanding</a>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+                background-color: white;
+                color: white;
+            }
+            .navbar{
+                background-color: black;
+            }
 
-</div></body>
+            .scroll-up-btn{
+                position: fixed;
+                height: 45px;
+                width: 42px;
+                background: crimson;
+                right: 30px;
+                bottom: 10px;
+                text-align: center;
+                line-height: 45px;
+                color: #fff;
+                z-index: 9999;
+                font-size: 30px;
+                border-radius: 6px;
+                border-bottom-width: 2px;
+                cursor: pointer;
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.3s ease;
+            }
+            .scroll-up-btn.show{
+                bottom: 30px;
+                opacity: 1;
+                pointer-events: auto;
+            }
+            .scroll-up-btn:hover{
+                filter: brightness(90%);
+            }
+
+    
+            .container {
+                width: 80%;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            
+            ul,p{
+                color: black;
+                font-size:medium;
+                
+            }
+            ul{
+                font-weight: bolder;
+            }
+            .section h1{
+                margin: 20px 0;
+                padding: 20px;
+                background-color: crimson;
+                border-radius: 10px;
+            }
+    
+            h1 {
+                margin: 0 0 10px 0;
+            }
+    
+            a {
+                color: white;
+                text-decoration: underline;
+            }
+    
+            a:hover {
+                text-decoration: none;
+            }
+    
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
+    
+            ul ul {
+                margin-left: 20px;
+                list-style-type: disc;
+            }
+
+            .container-2 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+                margin-top: 40px;
+            }
+
+            .box {
+                background-color: black;
+                color: white;
+                border-radius: 6px;
+                padding: 20px;
+                text-align: center;
+                font-size: 1.2em;
+                overflow: hidden;
+                transition: all 0.3s ease;
+            }
+
+            .box:hover{
+                background: crimson;
+                transform: scale(1.05);
+            }
+
+            .box:hover button {
+                background-color: black; /* Change to the desired color */
+                color: white; /* Change to the desired text color */
+            }
+            
+            .box img{
+                height: 150px;
+                width: 150px;
+                object-fit: cover;
+                border: 5px solid crimson;
+                transition: all 0.3s ease;
+            }
+            
+            .box img{
+                border-color: #fff;
+                margin-top: 30px;
+                width: 80%;
+                height: 300px;
+            }
+
+            button{
+                margin-top: 30px;
+                background-color: crimson;
+                color: white;
+                border: none;
+                padding: 17px 40px;
+                border-radius: 50px;
+                cursor: pointer;
+                background-color: crimson;
+                box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                font-size: 15px;
+                transition: all 0.5s ease;
+            }
+
+            button:hover {
+                letter-spacing: 3px;
+                box-shadow: rgb(52, 52, 52) 0px 7px 29px 0px;
+            }
+
+            button:active {
+                letter-spacing: 3px;
+                background-color: crim;
+                color: hsl(0, 0%, 100%);
+                box-shadow:rgb(52, 52, 52) 0px 7px 29px 0px;
+                transform: translateY(10px);
+                transition: 100ms;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <form action="JSP.jsp"></form>
+    <div class="scroll-up-btn">
+        <iframe
+        src="https://www.chatbase.co/chatbot-iframe/VSvURHMOe2vN4lC2MOWPx"
+        title="Chatbot"
+        width="100%"
+        style="height: 100%; min-height: 700px"
+        frameborder="0"
+        ></iframe>
+        <script>
+        window.embeddedChatbotConfig = {
+        chatbotId: "VSvURHMOe2vN4lC2MOWPx",
+        domain: "www.chatbase.co"
+        }
+        </script>
+        <script
+        src="https://www.chatbase.co/embed.min.js"
+        chatbotId="VSvURHMOe2vN4lC2MOWPx"
+        domain="www.chatbase.co"
+        defer>
+        </script>
+    </div>
+        <nav class="navbar">
+            <div class="max-width">
+            <div class="logo"><a href="#">New<span>Horizon.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#services" class="menu-btn">Services</a></li>
+                <li><a href="#skills" class="menu-btn">Blogs</a></li>
+                <li><a href="#skills" class="menu-btn">Music</a></li>
+                <li><a href="#teams" class="menu-btn">Teams</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            </div>
+        </nav>
+<br><br><br><br><br><br>
+    <div class="container">
+        <div class="section">
+            <h1>Anger</h1>
+            <p>
+                Anger is a natural and often intense emotional response to perceived threats, frustrations, or injustices. It is characterized by feelings of displeasure, irritation, and hostility. Physiologically, anger can trigger the body's "fight or flight" response, leading to increased heart rate, elevated blood pressure, and the release of adrenaline. While anger can be a motivating force for addressing problems or standing up against unfairness, it can also lead to negative outcomes if not managed properly. Uncontrolled anger can harm personal relationships, lead to physical aggression, and contribute to mental and physical health issues. Understanding and managing anger through techniques such as deep breathing, mindfulness, and constructive communication is crucial for maintaining emotional well-being and fostering healthy interactions.
+            </p>
+        </div>
+
+        <div class="section">
+            <h1>Solutions</h1>
+            <ul>
+                <li>Practice deep breathing exercises to calm your mind and body.</li>
+                <li>Engage in physical activity like jogging, yoga, or any form of exercise.</li>
+                <li>Try relaxation techniques such as meditation and mindfulness.</li>
+                <li>Consider professional help like therapy or counseling if needed.</li>
+                <li>Watch helpful YouTube videos on meditation and anger management:</li>
+            </ul>
+        </div>
+        <div class="container-2">
+            <div class="box">
+                <h3>BREATHING EXERCISES AND MEDITATION</h3>
+                <img src="./assets/meditation.avif" alt="breathing">
+                <button class="breathing">Click here for tutorial videos</button>
+            </div>
+            <div class="box">
+                <h3>BOOST YOUR MOOD</h3>
+                <img src="./assets/happy.jpg" alt="happy">
+                <button class="breathing">Click here for tutorial videos</button>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
