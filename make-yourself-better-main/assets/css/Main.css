@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 800px;
+  background-color: #dfc18d;
+  font-size: 20px;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.border-container {
+  border: 3px solid #0B3C49;
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
+ul {
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+.button {
+  display: inline-block;
+  color: #0B3C49;
+  font-weight: bold;
+  text-decoration: none;
+  border: solid 2px;
+  border-radius: 8px;
+  background-color: transparent;
+  padding: 5px 9px;
+}
+
+.submit-button {
+  padding: 13px 15px;
+  margin-bottom: 10px;
+}
+
+.submit-button i {
+  scale: 150%;
+}
+
+.button:hover {
+  color: #0B3C49;
+  background-color: #ff7f50;
+  cursor: pointer;
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+
+input {
+  border: solid 3px;
+  border-radius: 8px;
+  padding: 5px 9px;
+  width: 654px;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.fas {
+  scale: 150%;
+}
+
+.hidden {
+  display: none;
+}
