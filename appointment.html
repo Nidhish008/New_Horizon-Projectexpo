@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychiatrists</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F2F3AE;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .box {
+            background-color: #0b3c49;
+            border: 1px solid rgb(2, 2, 2);
+            border-radius: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 50px;
+            width: calc(25% - 5px); /* Two boxes per row with more space */
+            box-sizing: border-box;
+            overflow: hidden;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .box img {
+            width: 70%;
+            height: 175px;
+            display: block;
+            margin: auto; /* Center the image horizontally */
+            padding: 25px; /* Add some space around the image */
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .content h2 {
+            margin: 0 0 10px;
+            font-size: 1.5em;
+            color: #fff;
+        }
+
+        .content p {
+            font-size: 1em;
+            color: #ccc;
+            margin: 0 0 20px;
+        }
+
+        button {
+            background-color: black;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button :hover{
+            transition: transform scale(11.5em);
+        }
+
+        .box:hover {
+            background-color: black;
+        }
+        .box:hover h2{
+            color: #F2F3AE;
+        }
+        .box:hover p{
+            color: #F2F3AE;
+        }
+
+        .box:hover button {
+            background-color: #0b3c49;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="content">
+                <h2>Dr. John Doe</h2>
+                <img class="pic" src="./assets/psych1.jpg" alt="Psychiatrist 1">
+                <p>Dr. John Doe is a renowned psychiatrist with over 20 years of experience...</p>
+                <button>Book Appointment</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>Dr. Jane Smith</h2>
+                <img src="./assets/psych2.jpg" alt="Psychiatrist 2">
+                <p>Dr. Jane Smith specializes in cognitive behavioral therapy and has been practicing for 15 years...</p>
+                <button>Book Appointment</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>Dr. Emily Johnson</h2>
+                <img src="./assets/psych6.avif" alt="Psychiatrist 3">
+                <p>Dr. Emily Johnson has extensive experience in treating anxiety disorders...</p>
+                <button>Book Appointment</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>Dr. Michael Brown</h2>
+                <img src="./assets/psych4.jpg" alt="Psychiatrist 4">
+                <p>Dr. Michael Brown is known for his expertise in adolescent psychiatry...</p>
+                <button>Book Appointment</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>Dr. Laura Wilson</h2>
+                <img src="./assets/psych5.jpg" alt="Psychiatrist 5">
+                <p>Dr. Laura Wilson is a specialist in mood disorders and depression...</p>
+                <button>Book Appointment</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>Dr. Robert Davis</h2>
+                <img src="./assets/psych3.jpg" alt="Psychiatrist 6">
+                <p>Dr. Robert Davis has a focus on adult psychiatry and psychoanalysis...</p>
+                <button>Book Appointment</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>Dr. Linda Garcia</h2>
+                <img src="./assets/psych7.webp" alt="Psychiatrist 7">
+                <p>Dr. Linda Garcia specializes in child and adolescent psychiatry...</p>
+                <button>Book Appointment</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>Dr. William Martinez</h2>
+                <img src="./assets/psych9.jpg" alt="Psychiatrist 8">
+                <p>Dr. William Martinez is an expert in treating PTSD and trauma-related disorders...</p>
+                <button>Book Appointment</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h2>Dr. Elizabeth Taylor</h2>
+                <img src="./assets/psych8.webp" alt="Psychiatrist 9">
+                <p>Dr. Elizabeth Taylor has extensive experience in forensic psychiatry...</p>
+                <button>Book Appointment</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
