@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="x-icon" href="assets/images/pencil.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="assets/css/Main.css" />
+    <link rel="stylesheet" href="assets/css/Links/Links.css" />
+    <link rel="stylesheet" href="assets/css/Header.css" />
+    <link rel="stylesheet" href="assets/css/Timer.css" />
+    <link rel="stylesheet" href="assets/css/ToDoList/ToDoList.css" />
+    <link rel="stylesheet" href="assets/css/ToDoList/ToDoListInput.css" />
+
+    <title> Make yourself better!    </title>
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <h1 class="main-header">Make yourself better!        </h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="links-to-start-block border-container">
+          <div class="lintk-to-start-header">
+            <h2>Links
+            </h2>
+
+            <button
+              class="links-hide-button button submit-button"
+              id="hide-links-form"
+            >
+              <i
+                class="fa-solid fa-minus links-add-minus hidden"
+                image.pngimage.png
+              ></i>
+              <i class="fa-solid fa-plus links-add-plus"></i>
+            </button>
+          </div>
+
+          <form class="links-add-container hidden">
+            <input
+              type="text"
+              class="links-name-input links-input"
+              spellcheck="false"
+              placeholder="Link name"
+            />
+            <input
+              type="text"
+              class="links-link-input links-input"
+              spellcheck="false"
+              placeholder="Link"
+            />
+            <button class="links-add-button button submit-button" type="button">
+              <i class="fas fa-plus-square"></i>
+            </button>
+          </form>
+
+          <div class="links-container">
+            <ul class="links-list">
+              <!-- <div class="link">
+                <li class="link-block">
+                  <a
+                    class="link-item button"
+                    href="https://www.youtube.com/watch?v=jfKfPfyJRdk&ab_channel=LofiGirl"
+                  >
+                    LofiGirl
+                  </a>
+
+                  <button class="links-list-trash-button trash-button button">
+                    <i class="fas fa-trash"></i>
+                  </button>
+                </li>
+              </div> -->
+            </ul>
+          </div>
+          <div>
+            <button
+              class="open_all_links_button button hidden"
+              id="open-all-links"
+            >
+            Open everything!
+
+            </button>
+          </div>
+        </div>
+
+        <div class="time-block">
+          <div class="timer-section time-block-item border-container">
+            <h3 class="timer-header">Timer</h3>
+            <div class="display-buttons-container">
+              <div class="time-container">
+                <div class="timer time"></div>
+              </div>
+
+              <div class="timer-controls">
+                <button class="time-button button" id="timer-start-btn">
+                  Start
+                </button>
+                <button class="time-button button" id="timer-stop-btn">
+                  Stop
+                </button>
+                <button class="time-button button" id="timer-reset-btn">
+                  Reset
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="best-time-section time-block-item border-container">
+            <h3 class="timer-header">Your best time
+            </h3>
+            <div class="display-buttons-container">
+              <div class="time-container">
+                <div class="best-time time"></div>
+              </div>
+
+              <div class="best-time-contols">
+                <button class="time-button button" id="record-time-reset-btn">
+                  Reset
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="todo-block border-container">
+          <h2 class="todo-header">To-do list
+          </h2>
+
+          <form class="todo-add-container">
+            <input
+              type="text"
+              class="todo-input"
+              spellcheck="false"
+              placeholder="What do you want to do?"
+            />
+            <button class="todo-button button submit-button" type="submit">
+              <i class="fas fa-plus-square"></i>
+            </button>
+            <div class="select">
+              <select name="todos" class="filter-todo border-container">
+                <option value="all">All</option>
+                <option value="completed">Completed</option>
+                <option value="uncompleted">Unfinished</option>
+              </select>
+            </div>
+          </form>
+
+          <div class="todo-container">
+            <ul class="todo-list">
+              <!-- <div class="todo">
+                <li class="todo-item border-container">hey</li>
+                <button class="check-button button todo-list-button">
+                  <i class="fas fa-check"></i>
+                </button>
+                <button class="trash-button button todo-list-button">
+                  <i class="fas fa-trash"></i>
+                </button>
+              </div> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+
+  <!--Links-->
+  <script src="scripts/Links functions/HideLinksForm.js"></script>
+  <script type="module" src="scripts/Links functions/openAllLinks.js"></script>
+  <script type="module" src="scripts/Links functions/addLinks.js"></script>
+
+  <!-- Timer, record -->
+  <script
+    type="module"
+    src="scripts/Time functions/Timer/Browser logic/timerBrowser.js"
+  ></script>
+  <script
+    type="module"
+    src="scripts/Time functions/Record time/Browser logic/recordTimeBrowser.js"
+  ></script>
+
+  <!-- TO DO LIST -->
+  <script src="scripts/To Do List/toDo.js"></script>
+</html>
