@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devolop by Sagar</title>
+
+
+
+
+
+
+    <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Header -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $('#header').load('header.html');
+        });
+    </script>
+    <script>
+        $(function () {
+            $('#footer').load('footer.html');
+        });
+    </script>
+
+    <head>
+      
+          
+    <div id="header"></div>
+  
+
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Tech Titans</title>
+         
+         <style>
+             body {
+                 font-family: Arial, sans-serif;
+                 margin: 0;
+                 padding: 0;
+                 background-color: #f4f4f4;
+             }
+     
+             h1 {
+                 text-align: center;
+                 padding: 20px 0;
+             }
+     
+             form {
+                 max-width: 800px;
+                 margin: 0 auto;
+                 padding: 20px;
+                 background-color: #fff;
+                 border-radius: 5px;
+                 box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+             }
+             
+             label,
+             input,
+             button {
+                 display: block;
+                 margin-bottom: 10px;
+             }
+     
+             
+             .Appointment{
+                 width: 100%;
+                 padding: 10px;
+                 border: 1px solid #ccc;
+                 border-radius: 5px;
+             }
+     
+             button {
+                 background-color: #007bff;
+                 color: #fff;
+                 border: none;
+                 border-radius: 5px;
+                 padding: 10px 20px;
+                 cursor: pointer;
+                 margin-top: 10px;
+             }
+     
+             #confirmation {
+              
+                 text-align: center;
+                 margin-top: 20px;
+                 font-weight: bold;
+                 color: green;
+             }
+            #appointmentForm{
+              margin-top: 200px;
+            }
+             
+     #footer{
+      margin-top: 200px;
+     }
+         </style>
+     </head>
+     <body>
+     
+     
+     
+         <div id="confirmation"></div>
+     
+     
+         
+      
+         <form id="appointmentForm" method="POST" name="google-sheet" >
+          <h1>Appointment Booking Form</h1>
+             <label for="name">Your Name:</label>
+             <input class="Appointment" type="text" id="name" name="name" required>
+             
+             <label for="email">Email:</label>
+             <input class="Appointment" type="email" id="email" name="email" required>
+             
+             <label for="phone">Phone Number:</label>
+             <input class="Appointment" type="tel" id="phone" name="phone" required>
+     
+             <label for="city" name="city">City:</label>
+             <select class="Appointment" id="city" name="city">
+              <option value="">Select City</option>
+              <option>Shimla</option>
+              <option>Manali</option>
+              <option>Dharamshala</option>
+              <option>Kullu</option>
+              <option>Mandi</option>
+              <option>Chamba</option>
+              <option>Dalhousie</option>
+              <option>Palampur</option>
+              <option>Solan</option>
+              <option>Bilaspur</option>
+             </select>
+     
+             <label for="user-select" >Select Hospital:</label>
+             <select class="Appointment" id="hospital" name="hospital">
+              <option value="">Select Hospital</option>
+              <option>Regional Hospital, Bilaspur</option>
+              <option>Civil Hospital, Ghumarwin</option>
+              <option>Dhanvantri Hospital	</option>
+              <option>AIIMS Bilaspur Himachal Pradesh	</option>
+              <option>Sapphire Healthcare	</option>
+              <option>Civil Hospital, Dalhousie</option>
+              <option>Civil Hospital,Tissa</option>
+              <option>Pt JLNMC And Hospital, Chamba</option>
+              <option>Rana Hospital</option>
+              <option>SWAMI SHRI HARIGIRI MULTISPECIALTY HOSPITAL KAKIRA</option>
+              <option>Civil Hospital, Tauni Devi</option>
+              <option>Dr RKGMC Hospital, Hamirpur</option>
+              <option>Aastha Hospital	</option>
+              <option>Parvati Hospital</option>
+              <option>Community Health Centre, Sujanpur Tira</option>
+              <option>communty health centre , Kangra</option>
+              <option>Ayurvedic Hospital, Kangra</option>
+              <option>City Hospital,Kangra</option>
+              <option>Dr RPMC Hospital, Tanda,Kangra	</option>
+              <option>Community Health Centre, Fatehpur,Kangra	</option>
+              <option>District Ayurvedic Hospital, Kullu</option>
+              <option>Civil Hospital, Ani,Kullu</option>
+              <option>Regional Hospital, Kullu</option>
+              <option>Civil Hospital, Manali,Kullu</option>
+              <option>Lady Willingdon Hospital,Kullu</option>
+              <option>Project Hospital, Bhavanagar,Kinnaur</option>
+              <option>Community Health Centre, Sangla,Kinnaur</option>
+              <option>Primary Health Centre, Nichar,Kinnaur</option>
+              <option>District Ayurvedic Hospital, Reckong Peo,Kinnaur</option>
+              <option>Regional Hospital, Reckong Peo,Kinnaur</option>    
+              <option>District Ayurvedic Hospital, Keylongon,Lahul & Spiti</option>
+              <option>Community Health Centre, Udaypur,Lahul & Spiti</option>
+              <option>Regional Hospital, Keylong,Lahul & Spiti</option>
+              <option>Community Health Centre, Shansha,Lahul & Spiti</option>
+              <option>Primary Haelth Centre, Tabo,Lahul & Spiti</option>
+              <option>Referal Hospital, Sarkaghat,Mandi</option>
+              <option>Primary Health Centre, Ghor,Mandi</option>
+              <option>Civil Hospital, Karsog,Mandi</option>
+              <option>Primary Health Centre, Kotli,Mandi</option>
+              <option>Distt Ayurvedic Hospital, Mandi</option>
+              <option>Indira Gandhi Medical Collage,Shimla</option>
+              <option>MGMSC Khneri, Rampur,Shimla</option>
+              <option>Civil Hospital, Rohru,Shimla</option>
+              <option>Civil Hospital, Nerwa,Shimla</option>
+              <option>Civil Hospital, Chopal,Shimla</option>    
+              <option>Community Health Centre, Sangrah,Sirmaur</option>
+              <option>Regional Hospital, Nahan,Sirmaur</option>
+              <option>Referral Hospital, Dadahu,Sirmaur</option>
+              <option>Civil Hospital, Sarahan,Sirmaur</option>
+              <option>Civil Hospital, Paonta,Sirmaur</option>
+              <option>Civil Hospital Kandaghat,Solan</option>
+              <option>E S I Hospital, Parwanoo,Solan</option>
+              <option>Community Health Centre, Nalagarh,Solan</option>
+              <option>Community Health Centre, Nalagarh,Solan</option>
+              <option>Regional Hospital, Solan</option>
+             </select>
+             
+             <label for="Specialization" >Select Specialization:</label>
+             <select class="Appointment" id="Specialization" name="Specialization" >
+                
+                
+              <option value="">Select Specialization</option>
+              <option>Cardiology</option>
+              <option>Dermatologist</option>
+              <option>Gastroenterologist</option>
+              <option>Orthopedic</option>
+              <option>Neurology</option>
+              <option>Ophthalmologist</option>
+              <option>ENT Specialist (Otolaryngologist)</option>
+              <option>Urologist</option>
+              <option>Endocrinologist</option>
+              <option>Pulmonologist</option>
+              <option>Oncology</option>
+              <option>Gynecology</option>
+              <option>Pediatrics</option>
+              <option>Neuro Surgeon</option>
+              <option>Nephrologist</option>
+             </select>
+     
+             <label for="date">Appointment Date:</label>
+             <input class="Appointment" type="date" id="date" name="date" required>
+     
+             <label for="time">Appointment Time:</label>
+             <select class="Appointment" id="time" name="time" >
+                 <option>Select Time</option>
+                 <option>Morning</option>
+                 <option>Afternoon</option>
+                 <option>Evening</option>
+             </select>
+     
+             <button type="submit" class="op">Book Appointment</button>
+         </form>
+     
+          
+         
+          
+       <script>
+        </script>
+     
+     
+         <script>
+            
+             document.addEventListener("DOMContentLoaded", function () {
+                 const appointmentForm = document.getElementById("appointmentForm");
+                 const confirmationDiv = document.getElementById("confirmation");
+     
+                 appointmentForm.addEventListener("submit", function (e) {
+                     e.preventDefault();
+     
+                     // Get form data
+                     const name = document.getElementById("name").value;
+                     const email = document.getElementById("email").value;
+                     const phone = document.getElementById("phone").value;
+                     const city = document.getElementById("city").value;
+                     const hospital = document.getElementById("hospital").value;
+                     const Specialization = document.getElementById("Specialization").value;
+                     const date = document.getElementById("date").value;
+                     const time = document.getElementById("time").value;
+     
+     
+                 
+                     this.style['display'] = 'none';
+                      event.preventDefault();
+                     
+                     // Create a confirmation message
+                     const confirmationMessage = `
+                     
+                    
+                         <h2>Appointment Confirmation</h2>
+                         <p><strong>Name:</strong> ${name}</p>
+                         <p><strong>Email:</strong> ${email}</p>
+                         <p><strong>Phone:</strong> ${phone}</p>
+                         <p><strong>City:</strong> ${city}</p>
+                         <p><strong>Hospital:</strong> ${hospital}</p>
+                         <p><strong>Specialization:</strong> ${Specialization}</p>
+                         <p><strong>Date:</strong> ${date}</p>
+                         <p><strong>Time:</strong> ${time}</p>
+                         <p>Thank you, ${name}! Your appointment on ${date} at ${time} has been booked successfully!</p>
+                     `;
+     
+                     // Display a confirmation message
+                     confirmationDiv.innerHTML = confirmationMessage;
+                 });
+             });
+       
+         </script>
+
+
+
+<script>
+    let url = 'https://script.google.com/macros/s/AKfycbxBYFLe_l3t1wdqw8Y0acsEQhhVMdaps42BeJoFO0TMDgYqZ9E3OHS59S-vmwSRLmF1MA/exec'
+
+    let form = document.querySelector('#appointmentForm');
+    form.addEventListener("submit", (e) => {
+        let d = new FormData(form);
+        fetch(url, {
+            method: "POST",
+            body: d
+        }).then((res) => res.text())
+            .then((finalrRes) => console.log(finalRes))
+
+        e.preventDefault();
+
+    })
+</script>
+
+
+     </body> 
+     </html>
+     
+        <div id="footer"> </div>
+
+
+    </body>
+
+
+</head>
