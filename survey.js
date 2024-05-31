@@ -205,7 +205,7 @@ function endMsg(advise){
 	+'  <div id="wish">A Better Tomorrow</div>'
 	+'<div id="warningText"><i class="fa fa-exclamation-circle" style="font-size:30px"></i>'
 	+'<div>This is just a small survey to get to know yourself </div></div>'
-	+'<button id="startNew" class="mainBtn " title="Click Here To Start The Test" onclick="startTheTest()">Take Survey Again</button>'
+	+'<button id="startNew" class="mainBtnagain" title="Click Here To Start The Test" onclick="startTheTest()">Take Survey Again</button>'
 	+'<button onclick="reload()" title="Click here to go to home page!" class="mainBtn" id="goHomePageBtn">Go To Home Page</button>';
 	document.getElementById('box2').innerHTML += temp;	
 }
